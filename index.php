@@ -5,6 +5,9 @@ include_once 'dbconfig.php';
 if(isset($_GET['delete_id']))
 {
 	//delete logic here
+	//THIS machine was launched from stopped machine buffer
+	
+	
 	
 }
 // delete condition
