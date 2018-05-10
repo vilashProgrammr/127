@@ -5,7 +5,12 @@ include_once 'dbconfig.php';
 if(isset($_GET['delete_id']))
 {
 	//delete logic here
+	//This machine is launched from normal instance launch(5 minutes waiting)
+	$sql_query="DELETE FROM users WHERE user_id=".$_GET['delete_id'];
+	mysql_query($sql_query);
+	header("Location: $_SERVER[PHP_SELF]");
 	
+	//FINISH
 }
 // delete condition
 
